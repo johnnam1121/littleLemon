@@ -1,0 +1,26 @@
+.logo {
+  padding-left: 3em;
+}
+
+.navLink {
+  padding-right: 3em;
+}
+
+a:link {
+  color: #495e57;
+  background-color: transparent;
+  vertical-align: center;
+}
+
+a:visited {
+  color: #333333;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #f4ce14;
+  background-color: transparent;
+  text-decoration: underline;
+}
