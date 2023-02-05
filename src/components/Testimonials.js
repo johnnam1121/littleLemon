@@ -1,70 +1,77 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import "../components/styles/Footer.css";
-import SpecialsCards from './SpecialsCards';
-import salad from '../assets/greek salad.jpg'
-import bruchetta from '../assets/bruchetta.svg'
-import dessert from '../assets/lemon dessert.jpg'
+import TestimonialsCards from './TestimonialsCards';
+import asianMale from '../assets/asianMale.jpg';
+import blackFemale from '../assets/blackFemale.jpg';
+import hispanic from '../assets/hispanic.jpg';
+import olderLady from '../assets/olderLady.jpg';
+import star from '../assets/star.jpg';
 
 function Testimonials() {
   return (
     <Container fluid>
-      <Row className='mt-4'>
-        <Col>
-          <h1>This Week's Specials!</h1>
-        </Col>
-        <Col>
-          <button>Online Menu</button>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <SpecialsCards
-            Title={"Playing Chess with a Student"}
-            Image={salad}
-            AltTag={"greek salad"}
-            Body={"One of the most important things to me as a teacher is to build positive rapport with my students. "}
+      <Row className='mt-5' style={{ backgroundColor: '#495E57' }}>
+        <Row className='mt-4 mb-3'>
+          <h1 style={{textDecorationLine: 'underline'}}>Testimonials from our customers</h1>
+        </Row>
+        <Col className=''>
+          <Row>
+            <h1>Rating: 5</h1>
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+          </Row>
+          <TestimonialsCards
+            Image={asianMale}
+            AltTag={"Asian Male"}
+            Body={"I really enjoyed my time at little lemon! The food and service was great! "}
           />
-          <h1>Greek Salad</h1>
-          <h2>Price</h2>
-          <p>Some words</p>
-          <h2>Order a delivery + delivery icon here</h2>
         </Col>
-        <Col>
-          <SpecialsCards
-            Title={"Playing Chess with a Student"}
-            Image={salad}
+        <Col className=''>
+          <Row>
+            <h1>Rating: 4</h1>
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+          </Row>
+          <TestimonialsCards
+            Image={blackFemale}
             AltTag={"greek salad"}
-            Body={"One of the most important things to me as a teacher is to build positive rapport with my students. "}
+            Body={"Good experience but watch out for a waitress named Karen.. she was rude! "}
           />
-          <h1>Greek Salad</h1>
-          <h2>Price</h2>
-          <p>Some words</p>
-          <h2>Order a delivery + delivery icon here</h2>
         </Col>
-        <Col>
-          <SpecialsCards
-            Title={"Playing Chess with a Student"}
-            Image={salad}
+        <Col className=''>
+          <Row>
+            <h1>Rating: 5</h1>
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+          </Row>
+          <TestimonialsCards
+            Image={hispanic}
             AltTag={"greek salad"}
-            Body={"One of the most important things to me as a teacher is to build positive rapport with my students. "}
+            Body={"Love love love Little Lemon! Food is afforable and amazing! The service is always amazing and never lets us down! "}
           />
-          <h1>Greek Salad</h1>
-          <h2>Price</h2>
-          <p>Some words</p>
-          <h2>Order a delivery + delivery icon here</h2>
         </Col>
-        <Col>
-          <SpecialsCards
-            Title={"Playing Chess with a Student"}
-            Image={salad}
+        <Col className=''>
+          <Row>
+            <h1>Rating: 3</h1>
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+            <img src={star} alt='star' style={{ width: '3vw' }} />
+          </Row>
+          <TestimonialsCards
+            Rating={"3"}
+            Image={olderLady}
             AltTag={"greek salad"}
-            Body={"One of the most important things to me as a teacher is to build positive rapport with my students. "}
+            Body={"The app does not work when I tried to place an online order.. Fix this asap! I'm tired of having to call all the time! "}
           />
-          <h1>Greek Salad</h1>
-          <h2>Price</h2>
-          <p>Some words</p>
-          <h2>Order a delivery + delivery icon here</h2>
         </Col>
       </Row>
     </Container>

@@ -7,14 +7,12 @@ import * as yup from "yup";
 const schema = yup.object({
   name: yup.string().required("Full name is a required field!"),
   email: yup.string().required("Email is a required field!").email("Email is not valid!"),
-  telephone: yup.string().required("Telephone is a required field!").matches(/^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/, "Phone number must match the form 233 00 000 0000"),
+  telephone: yup.string().required("Telephone is a required field!"),
   guests: yup.number().min(1, "There must be at least 1 guest!").required("Please specify number of guests per table!"),
   date: yup.string().required("Please select date and time!"),
 })
 
 function ReservationDetails() {
-
-
   const { handleSubmit, register, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   })
@@ -28,17 +26,17 @@ function ReservationDetails() {
   return (
     <form onSubmit={handleSubmit(formSubmit)}>
       <fieldset>
-        <div className="field">
+        <div>
           <label htmlFor="name">Full Name</label>
           <input type="text" placeholder="John Doe" name="name" {...register("name")} />
           <span className="error-message">{errors.name?.message}</span>
         </div>
-        <div className="field">
+        <div>
           <label htmlFor="email">Email</label>
           <input type="text" placeholder="text@email.com" name="email" {...register("email")} />
           <span className="error-message">{errors.email?.message}</span>
         </div>
-        <div className="field">
+        <div>
           <label htmlFor="telephone">Telephone</label>
           <input type="tel" placeholder="233 00 000 0000" name="telephone" {...register("telephone")} />
           <span className="error-message">{errors.telephone?.message}</span>
@@ -63,7 +61,7 @@ function ReservationDetails() {
         </div>
         {/*</div>*/}
 
-        <div className="field">
+        <div>
           <label htmlFor="date">Date & Time</label>
           <input type="datetime-local" name="date" {...register("date")} />
           <span className="error-message">{errors.date?.message}</span>

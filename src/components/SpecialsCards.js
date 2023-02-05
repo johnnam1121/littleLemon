@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react'
 import { Modal, Image } from 'react-bootstrap';
+import "../components/styles/SpecialCards.css";
 
 const SpecialsCards = (props) => {
 
@@ -11,14 +12,14 @@ const SpecialsCards = (props) => {
   return (
     <>
       <Image
-        style={{ width: '10vw', height: '25vh', marginRight:5 }}
-        className='extraImg'
+        className='cardImg'
         src={props.Image}
         alt={props.AltTag}
-        onClick={handleShow} />
+        onClick={handleShow} 
+        style={{marginTop:'5vh', width:'100%'}}/>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className="component" closeButton>
-          <Modal.Title className="commentary">{props.Title}</Modal.Title>
+          <Modal.Title style={{ color: '#edefee' }}>{props.Title}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="component" >
           <Image src={props.Image} alt={props.AltTag} fluid />

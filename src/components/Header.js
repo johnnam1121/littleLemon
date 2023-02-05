@@ -6,7 +6,7 @@ import './styles/Header.css'
 function Header() {
   return (
     <Container fluid>
-      <Row className='mt-4 mb-4 align-items-center' style={{ backgroundColor: "#495E57" }}>
+      <Row className='align-items-center' style={{ backgroundColor: "#495E57" }}>
         <Col sm={{ span: 4, offset: 1 }}>
           <Row>
             <h1>Little Lemon</h1>
@@ -21,8 +21,8 @@ function Header() {
             <button>Reserve a Table</button>
           </Row>
         </Col>
-        <Col sm={{ span: 4, offset: 2 }}>
-          <img src={restaurantfood} alt="restaurantfood" />
+        <Col className='mt-3 mb-3' sm={{ span: 4, offset: 2 }}>
+          <img src={restaurantfood} alt="restaurantfood" style={{width:'25vw'}}/>
         </Col>
       </Row>
     </Container>

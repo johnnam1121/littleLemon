@@ -1,7 +1,8 @@
-import React, { Component, useState } from 'react'
-import { Modal, Image } from 'react-bootstrap';
-
-const TestimonialsCards = (props) => {
+import React, { useState } from 'react'
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import "../components/styles/SpecialCards.css";
+import star from '../assets/star.jpg'
+const SpecialsCards = (props) => {
 
   const [show, setShow] = useState(false);
 
@@ -9,26 +10,21 @@ const TestimonialsCards = (props) => {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Image
-        style={{ width: '10vw', height: '25vh', marginRight:5 }}
-        className='extraImg'
-        src={props.Image}
-        alt={props.AltTag}
-        onClick={handleShow} />
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header className="component" closeButton>
-          <Modal.Title className="commentary">{props.Title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="component" >
-          <Image src={props.Image} alt={props.AltTag} fluid />
-        </Modal.Body>
-        <Modal.Footer className="component" >
-          <p className="commentary">{props.Body}</p>
-        </Modal.Footer>
-      </Modal>
-    </>
+    <Container>
+      <Row className='mt-3 mb-3'>
+        <Col>
+          <Image
+            className='testimonialsImg'
+            src={props.Image}
+            alt={props.AltTag}
+            onClick={handleShow} />
+        </Col>
+        <Col>
+          <p>{props.Body}</p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
-export default TestimonialsCards
+export default SpecialsCards

@@ -7,18 +7,73 @@ h1 {
   color: #f4ce14;
 }
 
+.headingText {
+  border-style: solid;
+  border-radius: 4em;
+  border-color: #495E57;
+  background-color: #495E57;
+  text-align: center;
+}
+
 h2 {
-  color:#edefee
+  color: #edefee
 }
 
 p {
-  color:#edefee
+  color: #edefee
 }
 
 button {
-  color:#333333;
+  color: #333333;
   font-size: 2em;
   background-color: #f4ce14;
   border-radius: 12px;
   border: 2px solid #333333;
+}
+
+.cards {
+  border-style: solid;
+  border-radius: 4em;
+  border-color: #495E57;
+  text-align: center;
+  background-color: #495E57;
+  margin-right: 5vw;
+}
+
+.cardImg {
+  border-style: solid;
+  border-radius: 1em;
+  border-color: #495E57;
+  text-align: center;
+  margin-top: 20px;
+  height: 25vh;
+}
+
+.testimonials {
+  border-style: solid;
+  border-radius: 4em;
+  border-color: #495E57;
+  text-align: center;
+  background-color: #495E57;
+  margin-right: 5vw;
+}
+
+.testimonialsImg {
+  border-style: solid;
+  border-radius: 1em;
+  border-color: black;
+  text-align: center;
+  height: 20vh;
+}
+
+.component {
+  background-color: #495E57;
+}
+
+.about {
+  color: #333333
+}
+
+.doormat {
+  color: #edefee
 }

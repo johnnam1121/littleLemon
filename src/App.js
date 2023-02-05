@@ -6,6 +6,7 @@ import Specials from './components/Specials';
 import Nav from './components/Nav';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
+// import ReservationDetails from './components/ReservationDetails';
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <Specials />
       <Testimonials />
       <About />
+      <Footer />
+      <Nav />
+      <p>some blank space here</p>
+      {/* <ReservationDetails /> */}
       <Footer />
     </>
   );

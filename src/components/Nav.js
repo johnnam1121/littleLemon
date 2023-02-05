@@ -5,30 +5,30 @@ import "../components/styles/Nav.css";
 
 function Nav() {
   return (
-    <Container fluid >
-      <Row className='mt-3 mb-3 align-items-center' style={{ backgroundColor: "#EDEFEE" }}>
-        <Col sm={3}>
+    <Container fluid>
+      <Row className='align-items-center' style={{ backgroundColor: "#EDEFEE" }}>
+        <Col sm={3} className='mt-3 mb-3'>
           <img src={logo} alt='Main Logo' className='logo' />
         </Col>
         <Col>
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="/home">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About Us</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/menu">Menu</a>
+              <a class="nav-link" href="#">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/reservations">Reservations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/order">Order</a>
+              <a class="nav-link" href="#">Order</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
+              <a class="nav-link" href="#">Login</a>
             </li>
           </ul>
         </Col>
