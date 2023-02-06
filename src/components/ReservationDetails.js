@@ -140,7 +140,7 @@ function ReservationDetails() {
               className='mb-3'
               variant="primary"
               type="submit"
-              href='/ResConfirmation'
+              // href='/ResConfirmation'
               // disabled={!validate()}
             >
               Submit
