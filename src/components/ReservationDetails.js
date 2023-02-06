@@ -1,74 +1,103 @@
-import React from 'react';
-import "./styles/ReservationsContent.css";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup"
-import * as yup from "yup";
-
-const schema = yup.object({
-  name: yup.string().required("Full name is a required field!"),
-  email: yup.string().required("Email is a required field!").email("Email is not valid!"),
-  telephone: yup.string().required("Telephone is a required field!"),
-  guests: yup.number().min(1, "There must be at least 1 guest!").required("Please specify number of guests per table!"),
-  date: yup.string().required("Please select date and time!"),
-})
+import { React, useState } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import bar from '../assets/bar.jpg'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import "../components/styles/SpecialCards.css";
 
 function ReservationDetails() {
-  const { handleSubmit, register, formState: { errors } } = useForm({
-    resolver: yupResolver(schema)
-  })
-
-  console.log(errors)
-
-  const formSubmit = (data) => {
-    console.table(data)
-  }
-
   return (
-    <form onSubmit={handleSubmit(formSubmit)}>
-      <fieldset>
-        <div>
-          <label htmlFor="name">Full Name</label>
-          <input type="text" placeholder="John Doe" name="name" {...register("name")} />
-          <span className="error-message">{errors.name?.message}</span>
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="text" placeholder="text@email.com" name="email" {...register("email")} />
-          <span className="error-message">{errors.email?.message}</span>
-        </div>
-        <div>
-          <label htmlFor="telephone">Telephone</label>
-          <input type="tel" placeholder="233 00 000 0000" name="telephone" {...register("telephone")} />
-          <span className="error-message">{errors.telephone?.message}</span>
-        </div>
+    <Container fluid >
+      <Row className='align-items-center'
+        style={{
+          backgroundImage: `url(${bar})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          height: 'auto'
+        }}>
+        <Col md={{ span: 4, offset: 1 }}>
+          <h1 className='reserveH1'>Reserve a table</h1>
+          <h2>
+            Come reserve a table with us. We here at Little Lemon, pride ourseles with excellent customer service,
+            delicious food and awesome vibes.
+          </h2>
+          <h2>
+            Book a table now!
+          </h2>
 
-        {/*<div className="guestsdate">*/}
-        <div className="field occasion">
-          <label htmlFor="occasion">Occasion (optional)</label>
-          <div className="options">
-            <select name="occasion" {...register("occasion")}>
-              <option value="select">Select occasion</option>
-              <option value="birthday">Birthday</option>
-              <option value="engagement">Engagement</option>
-              <option value="anniversary">Anniversary</option>
-            </select>
-          </div>
-        </div>
-        <div className="field guest">
-          <label htmlFor="guests">Guests</label>
-          <input type="number" placeholder="2" name="guests" {...register("guests")} />
-          <span className="error-message">{errors.guests?.message}</span>
-        </div>
-        {/*</div>*/}
-
-        <div>
-          <label htmlFor="date">Date & Time</label>
-          <input type="datetime-local" name="date" {...register("date")} />
-          <span className="error-message">{errors.date?.message}</span>
-        </div>
-        <button className="reserve-btn" type="submit">Reserve</button>
-      </fieldset>
-    </form>
+        </Col>
+        <Col className='mt-5 mb-5' style={{ backgroundColor: '#edefee' }} md={{ span: 4, offset: 1 }}>
+          <Form>
+            <Form.Group className="mb-3 mt-3" controlId="formBasicUserName">
+              <Form.Label className='formStyler'>Full Name</Form.Label>
+              <Form.Control required type="name" placeholder="Enter full name" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label className='formStyler'>Email address</Form.Label>
+              <Form.Control required type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicNumber">
+              <Form.Label className='formStyler'>Phone Number</Form.Label>
+              <Form.Control required type="phone" placeholder="Enter phone number" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label className='formStyler'>Occasion?</Form.Label>
+              <Form.Text className="text-muted">
+                -Optional
+              </Form.Text>
+              <Form.Select className='formStyler' aria-label="Default select example">
+                <option className='formStyler'>Select</option>
+                <option value="1">Graduation</option>
+                <option value="2">Birthday</option>
+                <option value="3">Anniversary</option>
+                <option value="4">Baby/Bridal/Wedding Shower</option>
+                <option value="5">Other</option>
+              </Form.Select>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label className='formStyler'>Number of Guests</Form.Label>
+              <Form.Select required className='formStyler' aria-label="Default select example">
+                <option>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8+</option>
+              </Form.Select>
+            </Form.Group>
+            <Row className='mb-3'>
+              <Col>
+                <Form.Label className='formStyler'>Date</Form.Label>
+                <Form.Control required type="date" placeholder="Enter date" />
+              </Col>
+              <Col>
+                <Form.Label className='formStyler'>Time</Form.Label>
+                <Form.Control required type="time" placeholder="Enter time" />
+              </Col>
+            </Row>
+            <Form.Group className="mb-3">
+              <Form.Check
+                required
+                label="Agree to terms and conditions"
+                feedback="You must agree before submitting."
+                feedbackType="invalid"
+              />
+            </Form.Group>
+            <Button className='mb-3' variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Col>
+        <Col></Col>
+      </Row>
+    </Container>
   )
 }
 

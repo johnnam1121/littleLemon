@@ -8,15 +8,23 @@ h1 {
 }
 
 h2 {
-  color:#edefee
+  color: #edefee
 }
 
 p {
-  color:#edefee
+  color: #edefee
 }
 
 button {
-  color:#333333;
+  color: #333333;
+  font-size: 2em;
+  background-color: #f4ce14;
+  border-radius: 12px;
+  border: 2px solid #333333;
+}
+
+.buttonStyler {
+  color: #333333;
   font-size: 2em;
   background-color: #f4ce14;
   border-radius: 12px;
