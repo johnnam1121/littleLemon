@@ -1,9 +1,7 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import restaurantfood from '../assets/restaurantfood.jpg'
-import Reservations from './Pages/Reservations'
 import './styles/Header.css'
-import { BrowserRouter, Route, useNavigate } from 'react-router-dom';
 
 function Header() {
   return (

@@ -1,10 +1,10 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import bruchetta from '../assets/bruchetta.svg';
+import salad from '../assets/greek salad.jpg';
+import dessert from '../assets/lemon dessert.jpg';
 import "../components/styles/SpecialCards.css";
 import SpecialsCards from './SpecialsCards';
-import salad from '../assets/greek salad.jpg'
-import bruchetta from '../assets/bruchetta.svg'
-import dessert from '../assets/lemon dessert.jpg'
 
 function Specials() {
   return (

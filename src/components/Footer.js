@@ -1,8 +1,7 @@
-import React from 'react'
-import logo from '../assets/Logo.svg'
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import restaurant from '../assets/restaurant.jpg';
 import "../components/styles/SpecialCards.css";
-import restaurant from '../assets/restaurant.jpg'
-import { Col, Container, Row } from 'react-bootstrap'
 
 function Footer() {
   return (
@@ -13,23 +12,23 @@ function Footer() {
         </Col>
         <Col md={{ span: 2 }} className='mt-5 mb-5' style={{ textAlign: 'center' }}>
           <ul className='doormat'>
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+            <li className="nav-item">
+              <a className="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style={{textDecoration: 'line-through'}}>About Us</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{textDecoration: 'line-through'}}>About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style={{textDecoration: 'line-through'}}>Menu</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{textDecoration: 'line-through'}}>Menu</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/reservations">Reservations</a>
+            <li className="nav-item">
+              <a className="nav-link" href="/reservations">Reservations</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style={{textDecoration: 'line-through'}}>Order</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{textDecoration: 'line-through'}}>Order</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style={{textDecoration: 'line-through'}}>Login</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#" style={{textDecoration: 'line-through'}}>Login</a>
             </li>
           </ul>
         </Col>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import "../components/styles/SpecialCards.css";
-import star from '../assets/star.jpg'
 const SpecialsCards = (props) => {
 
   const [show, setShow] = useState(false);

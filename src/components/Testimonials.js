@@ -1,12 +1,12 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import "../components/styles/Footer.css";
-import TestimonialsCards from './TestimonialsCards';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import asianMale from '../assets/asianMale.jpg';
 import blackFemale from '../assets/blackFemale.jpg';
 import hispanic from '../assets/hispanic.jpg';
 import olderLady from '../assets/olderLady.jpg';
 import star from '../assets/star.jpg';
+import "../components/styles/Footer.css";
+import TestimonialsCards from './TestimonialsCards';
 
 function Testimonials() {
   return (
@@ -15,7 +15,7 @@ function Testimonials() {
         <Row className='mt-4 mb-3'>
           <h1 style={{textDecorationLine: 'underline'}}>Testimonials from our customers</h1>
         </Row>
-        <Col className=''>
+        <Col>
           <Row>
             <h1>Rating: 5</h1>
             <img src={star} alt='star' style={{ width: '3vw' }} />
@@ -30,7 +30,7 @@ function Testimonials() {
             Body={"I really enjoyed my time at little lemon! The food and service was great! "}
           />
         </Col>
-        <Col className=''>
+        <Col>
           <Row>
             <h1>Rating: 4</h1>
             <img src={star} alt='star' style={{ width: '3vw' }} />
@@ -44,7 +44,7 @@ function Testimonials() {
             Body={"Good experience but watch out for a waitress named Karen.. she was rude! "}
           />
         </Col>
-        <Col className=''>
+        <Col>
           <Row>
             <h1>Rating: 5</h1>
             <img src={star} alt='star' style={{ width: '3vw' }} />
@@ -59,7 +59,7 @@ function Testimonials() {
             Body={"Love love love Little Lemon! Food is afforable and amazing! The service is always amazing and never lets us down! "}
           />
         </Col>
-        <Col className=''>
+        <Col>
           <Row>
             <h1>Rating: 3</h1>
             <img src={star} alt='star' style={{ width: '3vw' }} />

@@ -1,6 +1,6 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import mario from '../assets/Mario and Adrian A.jpg'
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import mario from '../assets/Mario and Adrian A.jpg';
 import "../components/styles/SpecialCards.css";
 
 function About() {
