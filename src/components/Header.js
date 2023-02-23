@@ -1,5 +1,6 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row, Nav } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 import restaurantfood from '../assets/restaurantfood.jpg'
 import './styles/Header.css'
 
@@ -19,8 +20,8 @@ function Header() {
           </Row>
           <Row className='mb-3'>
             {/* <button href="/Reservations">Link</button> */}
-            <form action="/Reservations">
-              <button type="submit">Reserve a table</button>
+            <form action="/reservations">
+              <button type="submit"><Nav.Link className='navlink' as={Link} to="/reservations">Reservations</Nav.Link></button>
             </form>
           </Row>
         </Col>

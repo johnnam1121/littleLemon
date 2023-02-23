@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Footer from '../Footer';
-import Nav from '../Nav';
+import Nav from '../Topbar';
 import ResConfirm from '../ResConfirm';
 
 class ResConfirmation extends Component {

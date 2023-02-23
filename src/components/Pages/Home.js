@@ -3,7 +3,7 @@ import { Component } from 'react';
 import About from '../About';
 import Footer from '../Footer';
 import Header from '../Header';
-import Nav from '../Nav';
+import Nav from '../Topbar';
 import Specials from '../Specials';
 import Testimonials from '../Testimonials';
 
