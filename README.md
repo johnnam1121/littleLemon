@@ -1,5 +1,7 @@
 This is a website built for the Front End Development certificate from Meta on Coursera. The goal of this was to create a restaurants website that included an ability to reserve a table. The reservation form must accept inputs needed to complete a reservation and check for completion. 
 
+Majority of the assets were provided by coursera during the course.
+
 Demo here: https://johnnam1121.github.io/littleLemon/
 
 Main Page:
