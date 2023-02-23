@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.fbf37241.css",
+    "main.js": "/react-gh-pages/static/js/main.887eb97d.js",
+    "static/js/787.a2f6b77c.chunk.js": "/react-gh-pages/static/js/787.a2f6b77c.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/react-gh-pages/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/bruchetta.svg": "/react-gh-pages/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek salad.jpg": "/react-gh-pages/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restaurantfood.jpg": "/react-gh-pages/static/media/restaurantfood.e8abf5b772b6817189aa.jpg",
+    "static/media/restaurant.jpg": "/react-gh-pages/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/bar.jpg": "/react-gh-pages/static/media/bar.880da8b0e8fd3308d58d.jpg",
+    "static/media/Logo.svg": "/react-gh-pages/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/olderLady.jpg": "/react-gh-pages/static/media/olderLady.ccdcea01362423e8e2bf.jpg",
+    "static/media/blackFemale.jpg": "/react-gh-pages/static/media/blackFemale.ba5a7f9f30d58ab385d9.jpg",
+    "static/media/asianMale.jpg": "/react-gh-pages/static/media/asianMale.fa4be855aa1466a1fcb3.jpg",
+    "static/media/hispanic.jpg": "/react-gh-pages/static/media/hispanic.333854849cb34643a28e.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.fbf37241.css.map": "/react-gh-pages/static/css/main.fbf37241.css.map",
+    "main.887eb97d.js.map": "/react-gh-pages/static/js/main.887eb97d.js.map",
+    "787.a2f6b77c.chunk.js.map": "/react-gh-pages/static/js/787.a2f6b77c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbf37241.css",
+    "static/js/main.887eb97d.js"
+  ]
+}
